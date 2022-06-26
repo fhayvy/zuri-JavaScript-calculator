@@ -39,11 +39,12 @@ function userComputation(){
     else{
         alert("The operator you entered was invalid! Please pick an operator from the options:")
     }
-    var confirm = window.confirm(`The value of ${numA} ${operator} ${numB} is ${result}, Do you want to perform another calculation?`);
+    var confirm = window.confirm(`The value of ${numA} ${operator} ${numB} is ${result}, Do you want to perform another calculation? \nPlease the link to my github repository will appear when you are done with the calculator.?`);
 
     if (confirm) {
         userComputation()
     } else {
+        alert("https://github.com/fhayvy/zuri-JavaScript-calculator")
         alert("Thank you for trying our calculator out.")
     }
 }
